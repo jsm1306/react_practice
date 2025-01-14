@@ -1,11 +1,14 @@
 {
+  "homepage":"https://jsm1306.github.io/react_practice",
   "name": "react_practice",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon backend/server.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "node backend/server.js"
+    "start": "node backend/server.js",
+    "predeploy": "npm run deploy",
+    "deploy": "gh-pages -d build"
   },
   "type": "module",
   "keywords": [],
